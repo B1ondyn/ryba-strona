@@ -1,0 +1,4 @@
+insert into ogloszenie (uzytkownik_id, kategoria, podkategoria, tytul, tresc) VALUES (1, 2, 0, 'Celine Dion', 'Sprzedam CD piosenkarki');
+select tytul, tresc from ogloszenie WHERE kategoria = 1 and podkategoria = 13;
+create user andrzej@localhost identified by "xsw23";
+Grant select, alter on ogloszenia.ogloszenie to andrzej@localhost;

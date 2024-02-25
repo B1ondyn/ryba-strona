@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styl3.css">
+    <title>Dodaj ogloszenie</title>
+</head>
+<body>
+    <div id="baner">
+        <h1>
+            Portal Ogloszeniowy
+        </h1>
+    </div>
+
+    <div id="lewy">
+        <h2>
+            Kategorie
+        </h2>
+        <ol>
+            <li>
+                Ksiazki
+            </li>
+            <li>
+                muzyka
+            </li>
+            <li>
+                filmy
+            </li>
+        </ol>
+
+        <h2>
+            Podkategorie
+        </h2>
+        <ol>
+            <li>
+                Romans
+            </li>
+            <li>
+                Biografia
+            </li>
+            <li>
+                Kryminal
+            </li>
+            <li>
+                Komiks
+            </li>
+        </ol>
+        <img src="ksiazki.jpg" alt="Dodaj ogloszenie">
+        <a href="C:\Users\kotel\OneDrive\Dokumenty\eg2/kwerendy.txt">Pobierz kwerendy</a>
+    </div>
+
+    <div id="prawy">
+
+        <h2>Anna Kowalska - Dodanie Ogloszenia</h2>
+
+        <form action="dodajRekord.php" method="POST">
+            <label for="kategoria">Kategoria</label><br>
+            <input type="number" name="kategoria" required><br>
+
+            <label for="podkategoria">Podkategoria</label><br>
+            <input type="number" name="podkategoria" required><br>
+
+            <label for="tytul">Tytuł</label><br>
+            <input type="text" name="tytul" required><br>
+
+            <label for="tresc">Treść</label><br>
+            <textarea name="tresc" rows="10" cols="40" required></textarea><br>
+
+            <button type="reset">WYCZYŚĆ</button>
+            <button type="submit">ZAPISZ</button>
+        </form>
+
+    </div>
+
+    <div id="stopka">
+        <p>Portal ogłoszeniowy opracował:00000000000</p>
+    </div>
+
+
+    
+</body>
+</html>
